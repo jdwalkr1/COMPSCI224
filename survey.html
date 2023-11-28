@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <!--importing font for survey-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>label {
+      font-family: 'Roboto', sans-serif;
+  }</style>
     <!--importing flexbox for topnav-->
     <link rel="stylesheet" href="flexbox.css">
     <div class ="flex-box">
@@ -32,7 +37,7 @@
   <body>
     <main>
         <div class="flex-survey">
-        <h1>Survey</h1>  
+        <h1 style="font-family: Century Verdana, Geneva, Tahoma, sans-serif;">Survey</h1>  
     </main>
     <!--This is where our questions begin. As you can see, the label serves as the question. Each question has a 
     unique id, and this is the element we'll retrieve in JS code. As you see, we've used a number string here.
@@ -131,8 +136,11 @@
     </select>
     <br>
     </br>
-    <!--Here is our submit button. Do you want a "reset" button-->
+    <!--Submit and Reset Buttons-->
+    <div class="centerbutton">
     <button class="pill-button" id="submit">Submit</button>
+    <button class="pill-button" id="reset">Reset</button>
+    </div>
     </p>
   </div>
   </body>
