@@ -1,16 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
 // Function to collect the survey data
 function collectSurveyData() {
     // Get the selected values from the dropdown menus
-     const negativeth = parseInt(document.getElementById['negativeth'].value);
-     const identify = document.getElementById['identify'].value;
-     const overall = document.getElementById['overall'].value;
-     const upset = document.getElementById['upset'].value;
-     const mindfulness = document.getElementById['mindfulness'].value;
-     const positive = document.getElementById['positive'].value;
-     const aware = document.getElementById['aware'].value;
-     const awake = document.getElementById['awake'].value;
-     const criticize = document.getElementById['criticize'].value;
-     const therapy = document.getElementById['therapy'].value;
+     const negativeth = document.getElementById['negativeth'];
+     const identify = document.getElementById['identify'];
+     const overall = document.getElementById['overall'];
+     const upset = document.getElementById['upset'];
+     const mindfulness = document.getElementById['mindfulness'];
+     const positive = document.getElementById['positive'];
+     const aware = document.getElementById['aware'];
+     const awake = document.getElementById['awake'];
+     const criticize = document.getElementById['criticize'];
+     const therapy = document.getElementById['therapy'];
 
      const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy];
         
@@ -19,9 +20,9 @@ function collectSurveyData() {
 
      let total = surveyArray.length;
 
-     let calculation = 0;
+     let calculation = overall;
 
-     surveyArray.forEach(tallyScore);
+     
 
      // Function to find total value of all the answers based on numerical value
      function tally(scores){
@@ -30,7 +31,7 @@ function collectSurveyData() {
        
      calculation = (responses/total) * 100;
 
-     if(calculatin > 0){
+     if(calculation > 0){
           console.log("Based on your responses, you received a score of: " + calculation + "%.");
      } else {
          console.log("According to your answers, you seem to be doing great! Feel free to browse our resources anyways though!");
@@ -55,9 +56,11 @@ function collectSurveyData() {
      if(calculation >= 75 && calculation < 100){
          console.log("You seem to be experiening a significant amount of mental distress. It is recommended that you read some of our resources on depression and consider consulting a professional for advice.")
      }
+     
 
 }
 
 // Add an event listener to the Submit button to collect data when clicked
-const Submit = document.querySelector('button');
-Submit.addEventListener('click', collectSurveyData);
+const Submit = document.querySelector("button");
+Submit.addEventListener("click", collectSurveyData);
+});
