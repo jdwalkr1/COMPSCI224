@@ -1,0 +1,77 @@
+/*setting the background image using gradient*/
+body{
+    background-image: linear-gradient(to left,rgba(75, 148, 172, 0.161), rgba(173, 216, 1230, 0.989));
+    padding:1%;
+    
+    margin: 0%;
+}
+
+
+/* flex box for top nav. This effect sets three rows for the content. Flexbox automatically resizes*/
+.flex-box{
+
+    padding: 2%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-image:linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
+    color: rgb(95, 37, 15);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Century Gothic", Century Gothic, Geneva, AppleGothic, sans-serif;
+
+}
+/* this is to remove the line under the hyperlink */
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+/*flex box for fade-out*/
+.flex-container1{
+    padding: 2%;
+    margin:2%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+
+}
+/*flex box for survey*/
+.flex-survey{
+    
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    padding:1%;
+    margin:2%;
+}
+
+/*this is for the submit pill button in survey */
+.pill-button {
+    background-color: white; /* Background color for the button */
+    border: 4px solid black; /* Dark blue border */
+    border-radius: 100px; /* Makes it pill-shaped */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Adjust padding to change button size */
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-family: "Century Gothic", Century Gothic, Geneva, AppleGothic, sans-serif;
+    justify-content: center;
+}
+ /* this allows the submit button in survey to be centered */
+.centerbutton {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:10vh;
+  }
+
+
+
+
+
