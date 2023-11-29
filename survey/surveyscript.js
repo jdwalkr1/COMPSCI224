@@ -1,17 +1,16 @@
 // Function to collect the survey data
 function collectSurveyData() {
     // Get the selected values from the dropdown menus
-     const negativeth = parseInt(document.getElementById["negativeth"].value);
-     console.log(negativeth);
-     const identify = document.getElementById["identify"].value;
-     const overall = document.getElementById["overall"].value;
-     const upset = document.getElementById["upset"].value;
-     const mindfulness = document.getElementById["mindfulness"].value;
-     const positive = document.getElementById["positive"].value;
-     const aware = document.getElementById["aware"].value;
-     const awake = document.getElementById["awake"].value;
-     const criticize = document.getElementById["criticize"].value;
-     const therapy = document.getElementById["therapy"].value;
+     const negativeth = parseInt(document.getElementById['negativeth'].value);
+     const identify = document.getElementById['identify'].value;
+     const overall = document.getElementById['overall'].value;
+     const upset = document.getElementById['upset'].value;
+     const mindfulness = document.getElementById['mindfulness'].value;
+     const positive = document.getElementById['positive'].value;
+     const aware = document.getElementById['aware'].value;
+     const awake = document.getElementById['awake'].value;
+     const criticize = document.getElementById['criticize'].value;
+     const therapy = document.getElementById['therapy'].value;
 
      const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy];
         
