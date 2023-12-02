@@ -6,7 +6,7 @@ body{
     margin: 0%;
 }
 
-
+/*comment*/
 /* flex box for top nav. This effect sets three rows for the content. Flexbox automatically resizes*/
 .flex-box{
 
@@ -15,7 +15,7 @@ body{
     flex-flow: row;
     justify-content: space-evenly;
     background-image:linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
-    color: rgb(95, 37, 15);
+    color: rgb(8, 3, 0);
     text-align: center;
     text-decoration: none;
     font-size: 20px;
