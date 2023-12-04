@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left,rgba(75, 148, 172, 0.161), rgba(173, 216, 1230, 0.989));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+   
+}
+.exercise-container {
+    display: flex;
+    flex-direction: row; /* Updated to display horizontally */
+    justify-content: space-around; /* Distribute containers with space around */
+    border: 2px black ;
+}
+h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Recursive', sans-serif;
+    font: bold;
+}
+
+.exercise {
+    max-width: 400px; /* Adjusted width for better side-by-side display */
+    margin: 0 10px; /* Added margin between exercises for better separation */
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: 1px solid black ;
+}
+
+.exercise:hover {
+    transform: scale(1.02);
+}
+
+.sense {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+li:before {
+    content: "•";
+    margin-right: 8px;
+    color: #ff7b00;
+}
+
+input {
+    padding: 6px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+h2{
+    font-style: normal;
+    text-align: center;
+    padding: auto;
+}
+
+/* Add this in your style.css file */
+
+#myButton{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #345174; /* Green color as an example */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#myButton:hover {
+    background-color: #345174; /* Darker green color on hover */
+}
