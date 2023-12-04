@@ -71,6 +71,39 @@ a {
     height:10vh;
   }
 
+  /* this allows our slide deck in our index to be centered properly*/
+  .piccontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 0 auto 0 auto;
+    max-width: 1200px; 
+  }
+
+/* this is for the search box on survey page*/
+  .search-box{
+
+    padding: 2%;
+    flex-flow: row;
+    background-image:linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
+    color: rgb(8, 3, 0);
+    font-size: 20px;
+    width: 100%;
+    font-family: "Century Gothic", Century Gothic, Geneva, AppleGothic, sans-serif;
+
+}
+
+.linkbutton {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+  }
 
 
 
