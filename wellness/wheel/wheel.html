@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index/flexbox.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    label {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  
+
+
+</head>
+
+<body>
+  <body>
+    
+  
+
+
+
+
+  <main>
+    <div class="flex-box">
+      <a class="w3-button w3-light-blue w3-round-large" href="/index.html">Main</a>
+      <a class="w3-button w3-light-blue w3-round-large" href="/survey/survey.html">Survey</a>
+      <a class="w3-button w3-light-blue w3-round-large" href="/wellness/wellness.html">Wellness</a>
+      <a class="w3-button w3-light-blue w3-round-large" href="/resources/resources.html">Resources</a>
+    </div>
+<br>
+  </br>
+<br>
+</br> 
+<br>
+</br>
+<link rel="stylesheet" type="text/css" href="wheelstyle.css">
+<title>Affirmations Wheel</title>
+
+    <div class="container">
+        <div class="spinBtn">Spin</div>
+        <div class="wheel">
+            <div class="number" style="--i:1;--clr:#e0f2f2;">
+            <span>I'm letting go of thoughts that aren't helpful</span></div>
+            <div class="number" style="--i:2;--clr:#cae5e1;">
+            <span>I am loved and worthy</span></div>
+            <div class="number" style="--i:3;--clr:#aedbd3;">
+            <span>I am capable</span></div>
+            <div class="number" style="--i:4;--clr:#eadec9;">
+            <span>I'm in control of how I react</span></div>
+            <div class="number" style="--i:5;--clr:	#d6b89a;">
+            <span>Everyday is an opportunity to learn</span></div>
+            <div class="number" style="--i:6;--clr:#bcbad7;">
+            <span>It's okay to not be okay</span></div>
+            <div class="number" style="--i:7;--clr:#ffb77e;">
+            <span>My body is beautiful and unique as it is</span></div>
+            <div class="number" style="--i:8;--clr:#ceffab;">
+            <span>My ideas are valuable</span></div>
+        </div>
+    </div>
+    <script>
+        let wheel = document.querySelector('.wheel');
+        let spinBtn = document.querySelector('.spinBtn');
+        let value = Math.ceil(Math.random()*3600);
+        spinBtn.onclick = function(){
+            wheel.style.transform = "rotate("+ value + "deg)";
+            value += Math.ceil(Math.random()*3600);
+        }
+        
+    </script>
+    <br>
+  </br>
+  <br>
+</br>
+    </main>
+    
+</body>
+</html>
+
+
+
