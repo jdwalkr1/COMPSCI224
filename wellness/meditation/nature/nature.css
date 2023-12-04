@@ -9,6 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image:linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
+    color: rgb(8, 3, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Century Gothic", Century Gothic, Geneva, AppleGothic, sans-serif;
     align-items: center;
     height: 100vh;
 }
