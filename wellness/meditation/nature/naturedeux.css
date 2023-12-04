@@ -1,7 +1,8 @@
 /*setting the background image using gradient*/
 body{
-    background-image: linear-gradient(to left,rgba(75, 148, 172, 0.161), rgba(173, 216, 1230, 0.989));
-    justify-content: center;
+    background-image: url(naturegif.gif);
+    background-repeat: repeat;
+    background-size: cover;
     padding:1%;
     
     margin: 0%;
@@ -15,8 +16,7 @@ body{
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-    background-image:linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
-    color: rgb(8, 3, 0);
+    background-image: linear-gradient(to left,rgba(250, 249, 246, 0.331), rgba(250, 249, 246, 0.989)); 
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -105,7 +105,3 @@ a {
     cursor: pointer;
     width: 100%;
   }
-
-
-
-
