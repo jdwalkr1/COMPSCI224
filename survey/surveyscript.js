@@ -35,14 +35,17 @@ function collectSurveyData() {
 
      let total = surveyArray.length;
 
-     let calculation = overall;
+     let calculation = 0;
 
      
 
      // Function to find total value of all the answers based on numerical value
-     function tally(scores){
-         responses += scores;
-     }
+     for (let i = 0; i < surveyArray.length; i += 1) {
+  
+          responses += array[i];
+  
+      }
+
        
      calculation = (responses/total) * 100;
 
