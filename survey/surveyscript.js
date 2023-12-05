@@ -81,7 +81,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     }
     
+function resetData(){
+    document.getElementById('freeform').value = "";
+}
+
     // Add an event listener to the Submit button to collect data when clicked
-    const Submit = document.querySelector("button");
+    const Submit = document.getElementById("submit");
     Submit.addEventListener("click", collectSurveyData);
+    const Reset = document.getElementById("reset");
+    Reset.addEventListener("click", resetData);
     });
