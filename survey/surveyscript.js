@@ -2,33 +2,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to collect the survey data
     function collectSurveyData() {
         // Get the selected values from the dropdown menus
-         const negativeth = document.getElementById['negativeth'];
-         const identify = document.getElementById['identify'];
-         const overall = document.getElementById['overall'];
-         const upset = document.getElementById['upset'];
-         const mindfulness = document.getElementById['mindfulness'];
-         const positive = document.getElementById['positive'];
-         const aware = document.getElementById['aware'];
-         const awake = document.getElementById['awake'];
-         const criticize = document.getElementById['criticize'];
-         const therapy = document.getElementById['therapy'];
-         const  identifyemotions = document.getElementById['identifyemotions'];
-         const  specificemotions = document.getElementById['specificemotions'];
-         const dailylife = document.getElementById['dailylife'];
-         const activities = document.getElementById['activities'];
-         const satisfaction = document.getElementById['satisfaction'];
-         const support = document.getElementById['support'];
-         const unresolved = document.getElementById['unresolved'];
-         const stressburnout = document.getElementById['stressburnout'];
-         const workingout = document.getElementById['workingout'];
-         const sleep = document.getElementById['sleep'];
-         const goals = document.getElementById['goals'];
-         const coping = document.getElementById['coping'];
-         const social = document.getElementById['social'];
-         const proactive = document.getElementById['proactive'];
-         const effective = document.getElementById['proactive'];
+         const negativeth = document.getElementById('negativeth').value;
+         const identify = document.getElementById('identify').value;
+         const overall = document.getElementById('overall').value;
+         const upset = document.getElementById('upset').value;
+         const mindfulness = document.getElementById('mindfulness').value;
+         const positive = document.getElementById('positive').value;
+         const aware = document.getElementById('aware').value;
+         const awake = document.getElementById('awake').value;
+         const criticize = document.getElementById('criticize').value;
+         const therapy = document.getElementById('therapy').value;
+         const  identifyemotions = document.getElementById('identifyemotions').value;
+         const  specificemotions = document.getElementById('specificemotions').value;
+         const dailylife = document.getElementById('dailylife').value;
+         const activities = document.getElementById('activities').value;
+         const satisfaction = document.getElementById('satisfaction').value;
+         const support = document.getElementById('support').value;
+         const unresolved = document.getElementById('unresolved').value;
+         const stressburnout = document.getElementById('stressburnout').value;
+         const workingout = document.getElementById('workingout').value;
+         const sleep = document.getElementById('sleep').value;
+         const goals = document.getElementById('goals').value;
+         const coping = document.getElementById('coping').value;
+         const social = document.getElementById('social').value;
+         const proactive = document.getElementById('proactive').value;
+         const effective = document.getElementById('proactive').value;
     
-         const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
+         
+         const surveyArray = [negativeth, Number(identify), overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
             
          let responses = 0;
          responses.type = 'int';
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
           }
     
-           
+
          calculation = (responses/total) * 100;
     
          if(calculation > 0){
