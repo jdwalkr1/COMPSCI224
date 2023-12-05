@@ -12,6 +12,21 @@ function collectSurveyData() {
      const awake = document.getElementById['awake'];
      const criticize = document.getElementById['criticize'];
      const therapy = document.getElementById['therapy'];
+     const  identifyemotions = document.getElementById['identifyemotions'];
+     const  specificemotions = document.getElementById['specificemotions'];
+     const dailylife = document.getElementById['dailylife'];
+     const activities = document.getElementById['activities'];
+     const satisfaction = document.getElementById['satisfaction'];
+     const support = document.getElementById['support'];
+     const unresolved = document.getElementById['unresolved'];
+     const stressburnout = document.getElementById['stressburnout'];
+     const workingout = document.getElementById['workingout'];
+     const sleep = document.getElementById['sleep'];
+     const goals = document.getElementById['goals'];
+     const coping = document.getElementById['coping'];
+     const social = document.getElementById['social'];
+     const proactive = document.getElementById['proactive'];
+     const effective = document.getElementById['proactive'];
 
      const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy];
         
