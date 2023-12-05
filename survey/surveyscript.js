@@ -42,7 +42,7 @@ function collectSurveyData() {
      // Function to find total value of all the answers based on numerical value
      for (let i = 0; i < surveyArray.length; i += 1) {
   
-          responses += array[i];
+          responses += surveyArray[i];
   
       }
 
