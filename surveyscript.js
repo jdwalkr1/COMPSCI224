@@ -1,7 +1,7 @@
 // Function to collect the survey data
 function collectSurveyData() {
     // Get the selected values from the dropdown menus
-     const negativeth = parseInt(document.getElementById["negativeth"].value);
+     const negativeth = parseInt(document.getElementById("negativeth").value);
      console.log(negativeth);
      const identify = document.getElementById["identify"].value;
      const overall = document.getElementById["overall"].value;
@@ -22,7 +22,7 @@ function collectSurveyData() {
 
      let calculation = 0;
 
-     surveyArray.forEach(tallyScore);
+     surveyArray.forEach(tally);
 
      // Function to find total value of all the answers based on numerical value
      function tally(scores){
@@ -31,7 +31,7 @@ function collectSurveyData() {
        
      calculation = (responses/total) * 100;
 
-     if(calculatin > 0){
+     if(calculation > 0){
           console.log("Based on your responses, you received a score of: " + calculation + "%.");
      } else {
          console.log("According to your answers, you seem to be doing great! Feel free to browse our resources anyways though!");
