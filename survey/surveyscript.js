@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
          const coping = document.getElementById('coping').value;
          const social = document.getElementById('social').value;
          const proactive = document.getElementById('proactive').value;
-         const effective = document.getElementById('proactive').value;
+         const effective = document.getElementById('effective').value;
     
          
          const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
@@ -78,7 +78,22 @@ document.addEventListener('DOMContentLoaded', function() {
              document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nYou seem to be experiening a significant amount of mental distress. It is recommended that you read some of our resources on depression and consider consulting a professional for advice.")
          }
          
-    
+         var data = [
+            {x: "Coping Skills", value: (Number(overall) + Number(mindfulness) + Number(therapy) + Number(activities) + Number(support) + Number(workingout) + Number(goals) + Number(social) + Number(proactive) + Number(effective))},
+            {x: "Depression", value: (Number(positive) + Number(awake) + Number(criticize))},
+            {x: "Anxiety", value: (Number(negativeth) + Number(stressburnout) + Number(sleep))},
+            {x: "Emotional Dysregulation", value: (Number(upset), Number(identifyemotions) + Number(specificemotions) + Number(dailylife) + Number(satisfaction))},
+            {x: "Self-awareness", value: (Number(identify) + Number(aware) + Number(unresolved) + Number(goals))}
+         ];
+         // Code to create pie chart
+         var chart = anychart.pie();
+         chart.title("Severity of Your Answers");
+         chart.data(data);
+         chart.legend().position("right");
+         chart.legend().itemsLayout("vertical");  
+         chart.container('container');
+         chart.draw();
+
     }
     
 function resetData(){
