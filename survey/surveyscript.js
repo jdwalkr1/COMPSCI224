@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
          const effective = document.getElementById('proactive').value;
     
          
-         const surveyArray = [negativeth, Number(identify), overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
+         const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
             
-         let responses = 0;
+         var responses = 0;
          responses.type = 'int';
     
-         let total = surveyArray.length;
+         let total = (surveyArray.length*4);
     
          let calculation = 0;
     
@@ -43,14 +43,16 @@ document.addEventListener('DOMContentLoaded', function() {
          // Function to find total value of all the answers based on numerical value
          for (let i = 0; i < surveyArray.length; i += 1) {
       
-              responses += surveyArray[i];
+              responses += Number(surveyArray[i]);
       
           }
     
 
-         calculation = (responses/total) * 100;
+         calculation = parseFloat((responses/total) * 100);
+
+         console.log(responses + "/" + total + " * 100 = " + calculation);
     
-         if(calculation > 0){
+         if(calculation > 25){
               document.getElementById('freeform').value = ("Based on your responses, you received a score of: " + calculation + "%.");
          } else {
              document.getElementById('freeform').value = ("According to your answers, you seem to be doing great! Feel free to browse our resources anyways though!");
@@ -60,19 +62,19 @@ document.addEventListener('DOMContentLoaded', function() {
               document.getElementById('freeform').value = ("Based on your answers, it is highly recommended that you seek care from a professional and research symptoms of depression. If you are having an emergency or crisis please call 911.");
          }
     
-         if(calculation > 0 && calculation < 25){
+         if(calculation > 25 && calculation < 50){
              document.getElementById('freeform').value = ("Your answers suggest that you are doing okay but you might benefit from one or more of our resources.");
          }
     
-         if(calculation >= 25 && calculation < 50){
+         if(calculation >= 50 && calculation < 75 && calculation != 1){
              document.getElementById('freeform').value = ("You seem to be experiencing a few of the common symptoms of depression. Our resources may be able to help inform you about it while teaching healthy coping mechanisms.");
          }
     
-         if(calculation >= 50 && calculation < 75){
+         if(calculation >= 75 && calculation < 100){
             document.getElementById('freeform').value = ("You seem to be experiencing a number of the common symptoms of depression. Our resources may be able to help guide you towards a better understanding of what that means for you.");
          }
     
-         if(calculation >= 75 && calculation < 100){
+         if(calculation >= 75){
              document.getElementById('freeform').value = ("You seem to be experiening a significant amount of mental distress. It is recommended that you read some of our resources on depression and consider consulting a professional for advice.")
          }
          
