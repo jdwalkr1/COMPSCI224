@@ -28,7 +28,7 @@ function collectSurveyData() {
      const proactive = document.getElementById['proactive'];
      const effective = document.getElementById['proactive'];
 
-     const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy];
+     const surveyArray = [negativeth, identify, overall, upset, mindfulness, positive, aware, awake, criticize, therapy, identifyemotions, specificemotions, dailylife, activities, satisfaction, support, unresolved, stressburnout, workingout, sleep, goals, coping, social, proactive, effective];
         
      let responses = 0;
      responses.type = 'int';
