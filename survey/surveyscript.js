@@ -55,27 +55,27 @@ document.addEventListener('DOMContentLoaded', function() {
          if(calculation > 25){
               document.getElementById('freeform').value = ("Based on your responses, you received a score of: " + calculation + "%.");
          } else {
-             document.getElementById('freeform').value = ("According to your answers, you seem to be doing great! Feel free to browse our resources anyways though!");
+             document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nAccording to your answers, you seem to be doing great! Feel free to browse our resources anyways though!");
         }
             
          if(calculation == 100){
-              document.getElementById('freeform').value = ("Based on your answers, it is highly recommended that you seek care from a professional and research symptoms of depression. If you are having an emergency or crisis please call 911.");
+              document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nBased on your answers, it is highly recommended that you seek care from a professional and research symptoms of depression. If you are having an emergency or crisis please call 911.");
          }
     
          if(calculation > 25 && calculation < 50){
-             document.getElementById('freeform').value = ("Your answers suggest that you are doing okay but you might benefit from one or more of our resources.");
+             document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nYour answers suggest that you are doing okay but you might benefit from one or more of our resources.");
          }
     
          if(calculation >= 50 && calculation < 75 && calculation != 1){
-             document.getElementById('freeform').value = ("You seem to be experiencing a few of the common symptoms of depression. Our resources may be able to help inform you about it while teaching healthy coping mechanisms.");
+             document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nYou seem to be experiencing a few of the common symptoms of depression. Our resources may be able to help inform you about it while teaching healthy coping mechanisms.");
          }
     
          if(calculation >= 75 && calculation < 100){
-            document.getElementById('freeform').value = ("You seem to be experiencing a number of the common symptoms of depression. Our resources may be able to help guide you towards a better understanding of what that means for you.");
+            document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nYou seem to be experiencing a number of the common symptoms of depression. Our resources may be able to help guide you towards a better understanding of what that means for you.");
          }
     
          if(calculation >= 75){
-             document.getElementById('freeform').value = ("You seem to be experiening a significant amount of mental distress. It is recommended that you read some of our resources on depression and consider consulting a professional for advice.")
+             document.getElementById('freeform').value = document.getElementById('freeform').value + ("\nYou seem to be experiening a significant amount of mental distress. It is recommended that you read some of our resources on depression and consider consulting a professional for advice.")
          }
          
     
