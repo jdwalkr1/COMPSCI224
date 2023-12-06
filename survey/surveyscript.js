@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Function to collect the survey data
+    var chart = anychart.pie();
     function collectSurveyData() {
         // Get the selected values from the dropdown menus
          const negativeth = document.getElementById('negativeth').value;
@@ -86,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
             {x: "Self-awareness", value: (Number(identify) + Number(aware) + Number(unresolved) + Number(goals))}
          ];
          // Code to create pie chart
-         var chart = anychart.pie();
          chart.title("Severity of Your Answers");
          chart.data(data);
          chart.legend().position("right");
@@ -97,7 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 function resetData(){
+    var data = [];
     document.getElementById('freeform').value = "";
+    chart.data(data);
+    chart.title("");
 }
 
     // Add an event listener to the Submit button to collect data when clicked
