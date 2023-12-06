@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
          // Code to create pie chart
          chart.title("Severity of Your Answers");
          chart.data(data);
-         chart.radius(200)
+         chart.radius(100)
          chart.legend().position("right");
          chart.legend().itemsLayout("vertical");  
          chart.container('container');
