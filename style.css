@@ -1,0 +1,42 @@
+body{
+    background-image: linear-gradient(to bottom right, #eeffff, #ddeeff);
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 25px;
+    padding-bottom: 2px;
+}
+
+a{
+    color: #000055;
+}
+
+a:visited{
+    color: #191170;
+    text-decoration: underline;
+}
+
+h1, h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table, td, th{
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
+th{
+    background-color: #99ccff;
+}
+
+tr:nth-child(odd){
+    background-color: #b8ebff;
+}
+
+div{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
